@@ -17,7 +17,7 @@ const Header = () => {
 
     return (
         <header className='fixed flex justify-between items-center w-full z-50 bg-gradient-to-b from-white/70 via-white/30 to-transparent backdrop-blur-lg shadow-sm px-8 py-4'>
-            <img  src="./images/logo.png"  className="h-20 w-auto" onClick={() => navigate("/")}/>
+            <img  src="./images/logo.png" alt="Hotel Logo"  className="h-20 w-auto" onClick={() => navigate("/")}/>
             <nav className="flex items-center gap-6 text-gray-300 font-medium text-xl font-serif">
                 <a href="/" className={`transition-colors duration-300 ${
                     scrolled
