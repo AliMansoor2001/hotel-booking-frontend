@@ -1,8 +1,13 @@
 import axios from 'axios';
-const instance = axios.create({ baseURL: 'http://127.0.0.1:8000/api/' });
+
+const instance = axios.create({ 
+  baseURL: 'https://hotel-booking-backend-1-7kkx.onrender.com/api/' 
+});
+
 instance.interceptors.request.use(config => {
   const token = localStorage.getItem('access');
   if (token) config.headers.Authorization = `Bearer ${token}`;
   return config;
 });
+
 export default instance;
