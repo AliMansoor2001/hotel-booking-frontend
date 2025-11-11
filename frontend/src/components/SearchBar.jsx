@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import {Search} from 'lucide-react';
 
 const SearchBar = ({ location, setLocation, checkIn, setCheckIn, checkOut, setCheckOut, onSearch }) => {

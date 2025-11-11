@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useAuth } from "../AuthContext"; 
 import { useNavigate } from "react-router-dom";
-import { scale, motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 const Header = () => {
     const [scrolled, setScrolled] = useState(false);
@@ -19,23 +19,23 @@ const Header = () => {
         <header className='fixed flex justify-between items-center w-full z-50 bg-gradient-to-b from-white/70 via-white/30 to-transparent backdrop-blur-lg shadow-sm px-8 py-4'>
             <img  src="./images/logo.png"  className="h-20 w-auto" onClick={() => navigate("/")}/>
             <nav className="flex items-center gap-6 text-gray-300 font-medium text-xl font-serif">
-                <a href="#" className={`transition-colors duration-300 ${
+                <a href="/" className={`transition-colors duration-300 ${
                     scrolled
                     ? "text-gray-800 hover:text-blue-600"
                 : "text-white hover:text-blue-400"}`}>Home</a>
-                <a href="#" className={`transition-colors duration-300 ${
+                <a href="/" className={`transition-colors duration-300 ${
                     scrolled
                     ? "text-gray-800 hover:text-blue-600"
                 : "text-white hover:text-blue-400"}`}>Hotels</a>
-                <a href="#" className={`transition-colors duration-300 ${
+                <a href="/" className={`transition-colors duration-300 ${
                     scrolled
                     ? "text-gray-800 hover:text-blue-600"
                 : "text-white hover:text-blue-400"}`}>Flights</a>
-                <a href="#" className={`transition-colors duration-300 ${
+                <a href="/" className={`transition-colors duration-300 ${
                     scrolled
                     ? "text-gray-800 hover:text-blue-600"
                 : "text-white hover:text-blue-400"}`}>About</a>
-                <a href="#" className={`transition-colors duration-300 ${
+                <a href="/" className={`transition-colors duration-300 ${
                     scrolled
                     ? "text-gray-800 hover:text-blue-600"
                 : "text-white hover:text-blue-400"}`}>Contact</a>

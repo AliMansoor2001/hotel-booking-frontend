@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import axios from 'axios';
 import { useNavigate } from "react-router-dom";
 
 const SignUpForm = () => {
@@ -13,7 +12,7 @@ const SignUpForm = () => {
     
 
     try {
-      const res = await fetch("https://hotel-booking-backend-1-7kkx.onrender.com/signup", {
+      const res = await fetch("https://hotel-booking-backend-1-7kkx.onrender.com/api/signup", {
         method: 'POST',
         headers: {
             "Content-Type": "application/json",

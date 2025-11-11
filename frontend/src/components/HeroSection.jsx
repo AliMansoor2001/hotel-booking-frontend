@@ -1,4 +1,3 @@
-import React from 'react';
 import SearchBar from './SearchBar';
 
 const HeroSection = ({ location, setLocation, checkIn, setCheckIn, checkOut, setCheckOut, onSearch }) => {
